@@ -1,7 +1,8 @@
 streamlit
-pymupdf
+PyMuPDF
 faiss-cpu
+numpy
+python-dotenv
 sentence-transformers
 langchain
-groq
-python-dotenv
+langchain-groq
