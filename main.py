@@ -12,7 +12,13 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 # Load embedding model
-embed_model = SentenceTransformer('all-MiniLM-L6-v2')
+# embed_model = SentenceTransformer('all-MiniLM-L6-v2')
+
+from sentence_transformers import SentenceTransformer
+model = SentenceTransformer('all-MiniLM-L6-v2')
+model.save('./local_model')
+
+embed_model = SentenceTransformer('./local_model')
 
 
 
