@@ -1,0 +1,11 @@
+streamlit
+PyMuPDF
+faiss-cpu
+numpy
+python-dotenv
+sentence-transformers
+langchain
+langchain-groq
+torch
+langchain-huggingface
+huggingface_hub
