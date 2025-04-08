@@ -14,8 +14,9 @@ load_dotenv()
 # Load embedding model
 # embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
-from langchain_huggingface import HuggingFaceEmbeddings
-embed_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
+from sentence_transformers import SentenceTransformer
+model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+embed_model = model.encode(sentences)
 
 # from sentence_transformers import SentenceTransformer
 # model = SentenceTransformer('all-MiniLM-L6-v2')
