@@ -15,8 +15,7 @@ load_dotenv()
 # embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 from sentence_transformers import SentenceTransformer
-model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-embed_model = model.encode(sentences)
+embed_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
 # from sentence_transformers import SentenceTransformer
 # model = SentenceTransformer('all-MiniLM-L6-v2')
